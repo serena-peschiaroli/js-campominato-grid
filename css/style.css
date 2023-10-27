@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 80%;
+    margin: 3rem auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: end;
+}
+.startGame {
+    padding: 0.5rem 1rem;
+
+}
+
+.square {
+
+    width: calc(100%  / 10);
+    aspect-ratio: 1;
+    border: 1px solid grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.azure {
+    background-color: aquamarine;
+}
