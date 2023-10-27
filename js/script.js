@@ -14,19 +14,22 @@ function gridMaker() {
 
     if (difficulty ==="easy") {
         DimensioneGriglia = 100; 
+        squareClass = "square-easy";
 
     }else if (difficulty ==="medium") {
         DimensioneGriglia = 81;
+        squareClass = "square-medium";
 
     }else if (difficulty ==="hard") {
         DimensioneGriglia = 49;
+        squareClass = "square-hard";
     }
 
     rowg.innerHTML = "";
 
     for (let i = 1; i <= DimensioneGriglia; i++) {
         let square = document.createElement("div");
-        square.className = "square";
+        square.className = "square " + squareClass;
 
         console.log(square);
 

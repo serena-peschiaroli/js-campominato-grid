@@ -23,15 +23,33 @@
 
 }
 
+#difficultyLevel {
+    width: 100%;
+    padding: 0.5rem;
+}
+
 .square {
 
-    width: calc(100%  / 10);
-    aspect-ratio: 1;
     border: 1px solid grey;
     display: flex;
     align-items: center;
     justify-content: center;
 
+}
+
+.square-easy {
+    width: calc(100% / 10);
+    aspect-ratio: 1;
+}
+
+.square-medium {
+    width: calc(100% / 9);
+    aspect-ratio: 1;
+}
+
+.square-hard {
+    width: calc(100% / 7);
+    aspect-ratio: 1;
 }
 
 .azure {
