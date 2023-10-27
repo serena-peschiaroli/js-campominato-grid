@@ -4,19 +4,27 @@
     box-sizing: border-box;
 }
 
+
+
+
 .container {
     width: 80%;
-    margin: 3rem auto;
+    margin: 5rem auto;
+    
 }
 
 .row {
     display: flex;
     flex-wrap: wrap;
+   
 }
 
 .wrapper {
     display: flex;
     justify-content: end;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    
 }
 .startGame {
     padding: 0.5rem 1rem;
@@ -30,7 +38,7 @@
 
 .square {
 
-    border: 1px solid grey;
+    border: 1px solid black;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -52,6 +60,3 @@
     aspect-ratio: 1;
 }
 
-.azure {
-    background-color: aquamarine;
-}

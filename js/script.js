@@ -77,7 +77,7 @@ function gridMaker() {
 
 function colorSquare(square, number) {
     square.textContent= number;
-    square.style.backgroundColor = `blue`;
+    square.style.backgroundColor = `aquamarine`;
     console.log (`cella cliccata`, square.textcontent);
 }
 
