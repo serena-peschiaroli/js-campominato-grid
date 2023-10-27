@@ -16,7 +16,7 @@ Aggiungere una select accanto al bottone di generazione, che fornisca una scelta
 
 ### Logica: 
 
-1. creare le celle con una funzione ed un ciclo di for per numerarle con getelementbyid e addeventlistener sul bottone per stamparle in html; 
+1. creare la griglia con una funzione (da richiamare con un addeventlistener sul btn in html) ed un ciclo di for per numerarle (al click) 
 2. funzione che al click colora cella di azzurro 
 3. funzione che crea la griglia a seconda della difficoltà 
 

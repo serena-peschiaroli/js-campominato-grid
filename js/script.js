@@ -2,6 +2,9 @@
 
 document.getElementById("btn").addEventListener("click" , gridMaker);
 
+const rowg = document.querySelector(".row");
+
+
 
 
 
@@ -11,15 +14,32 @@ document.getElementById("btn").addEventListener("click" , gridMaker);
 
 function gridMaker() {
     const rowg = document.querySelector(".row");
-    let rowgrid = "";
+    rowg.innerHTML= "";
 
     for (let i = 1; i <= 100; i ++) {
-        let result = i;
-        console.log(i);
-        rowgrid += `<div class="square">${i}</div>`;
+        let square = document.createElement("div");
+        square.className= `square`;
+        
+    
+        console.log(square);
+
+        square.addEventListener("click", function(){
+            colorSquare(square, i);
+        });
+
+    
+        rowg.appendChild(square);
     }
 
-    rowg.innerHTML= rowgrid;
     
+   
+    
+}
+
+
+function colorSquare(square, number) {
+    square.textContent= number;
+    square.style.backgroundColor = `blue`;
+    console.log (`cella cliccata`, square.textcontent);
 }
 
